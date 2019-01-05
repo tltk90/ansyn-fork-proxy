@@ -23,4 +23,4 @@ docker push "$target:$version"
 
 echo "deployment succeeded";
 
-node scripts/kill-tasks.js $cluster $service $region
+node deploy/kill-tasks.js $cluster $service $region
