@@ -27,7 +27,7 @@ before_deploy:
 
 deploy:
 - provider: script
-  script: sh -x scripts/deploy.sh $REPO $TRAVIS_COMMIT $CLUSTER $SERVICE $AWS_REGION
+  script: sh -x deploy/deploy.sh $REPO $TRAVIS_COMMIT $CLUSTER $SERVICE $AWS_REGION
   skip_cleanup: true
   on:
     branch: master
