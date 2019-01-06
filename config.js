@@ -15,8 +15,8 @@ const config = {
     'ansyn.webiks.com': ANSYN_PROD_PORT || 83,
     'dev.ansyn.webiks.com': ANSYN_DEV_PORT || 81,
     'drone-geo-referencer-client.ansyn.webiks.com': ANSYN_DRONE_GEO_REFERENCER_CLIENT_PORT || 84,
-    'storage-service.dev.ansyn.webiks.com': ANSYN_STORAGE_SERVICE_PROD_PORT || 8080,
-    'storage-service.ansyn.webiks.com': ANSYN_STORAGE_SERVICE_DEV_PORT || 8081,
+    'storage-service.ansyn.webiks.com': ANSYN_STORAGE_SERVICE_PROD_PORT || 8080,
+    'storage-service.dev.ansyn.webiks.com': ANSYN_STORAGE_SERVICE_DEV_PORT || 8081,
     'mongo.ansyn.webiks.com': ANSYN_MONGO_PORT || 85
   }
 }
