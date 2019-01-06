@@ -12,7 +12,7 @@ const config = {
   port: 8081,
   domain: BASE_DOMAIN || 'http://ansyn.webiks.com',
   proxyPorts: {
-    'ansyn.webiks.com': ANSYN_PROD_PORT || 80,
+    'ansyn.webiks.com': ANSYN_PROD_PORT || 83,
     'ansyn.dev.webiks.com': ANSYN_DEV_PORT || 81,
     'ansyn.drone-geo-referencer-client.webiks.com': ANSYN_DRONE_GEO_REFERENCER_CLIENT_PORT || 84,
     'ansyn.dev.storage-service.webiks.com': ANSYN_STORAGE_SERVICE_PROD_PORT || 8080,
