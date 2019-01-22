@@ -5,7 +5,8 @@ const {
   ANSYN_DRONE_GEO_REFERENCER_CLIENT_PORT,
   ANSYN_STORAGE_SERVICE_PROD_PORT,
   ANSYN_STORAGE_SERVICE_DEV_PORT,
-  ANSYN_MONGO_PORT
+  ANSYN_MONGO_PORT,
+  ANSYN_API_PORT
 } = process.env
 
 const config = {
@@ -17,7 +18,8 @@ const config = {
     'drone-geo-referencer-client.ansyn.webiks.com': ANSYN_DRONE_GEO_REFERENCER_CLIENT_PORT || 84,
     'storage-service.ansyn.webiks.com': ANSYN_STORAGE_SERVICE_PROD_PORT || 8080,
     'storage-service.dev.ansyn.webiks.com': ANSYN_STORAGE_SERVICE_DEV_PORT || 8081,
-    'mongo.ansyn.webiks.com': ANSYN_MONGO_PORT || 85
+    'mongo.ansyn.webiks.com': ANSYN_MONGO_PORT || 85,
+    'api.ansyn.webiks.com': ANSYN_API_PORT || 86
   }
 }
 

@@ -3,11 +3,11 @@ const app = express()
 const proxy = require('express-http-proxy')
 const { port, proxyPorts, domain } = require('./config')
 
-app.use((req, res) => {
+app.use((req, res, next) => {
   const { host } = req.headers
   const port = proxyPorts[host]
   if (port) {
-    return proxy(`${domain}:${port}`)(req, res)
+    return proxy(`${domain}:${port}`)(req, res, next)
   }
   res.status(500)
   res.send('Cant find ', host);
